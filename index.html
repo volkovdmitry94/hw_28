@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homework 28</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<ol class="nav" id="navigator">
+    <li class="nav-item active" id="btn_form_user">
+        <label class="nav-link" for="btn_form_user">Create User</label>
+    </li>
+    <li class="nav-item" id="btn_form_add_post">
+        <label class="nav-link" for="btn_form_add_post">Create Post</label>
+    </li>
+    <li class="nav-item" id="btn_form_get_posts">
+        <label class="nav-link" for="btn_form_get_posts">Get Posts</label>
+    </li>
+    <li class="nav-item" id="btn_user_list">
+        <label class="nav-link" for="btn_user_list">User List</label>
+    </li>
+</ol>
+<div class="container">
+    <form action="#" class="card" id="form_user">
+        <h3 class="card-header">User Form</h3>
+        <label for="id_input" class="form-label">Enter User ID</label>
+        <input type="number" class="form-control" id="id_input" name="id">
+        <label for="name_input" class="form-label">Enter User Name</label>
+        <input type="text" class="form-control" id="name_input" name="name">
+        <label for="nickname_input" class="form-label">Enter User Nickname</label>
+        <input type="text" class="form-control" id="nickname_input" name="username">
+        <label for="email_input" class="form-label">Enter User Email</label>
+        <input type="email" class="form-control" id="email_input" name="email">
+        <label for="phone_input" class="form-label">Enter User Phone</label>
+        <input type="text" class="form-control" id="phone_input" name="phone">
+        <br>
+        <button type="submit" class="btn btn-success">Send User</button>
+    </form>
+    <form action="#" class="card hidden" id="form_add_post">
+        <h3 class="card-header">Add Post</h3>
+        <label for="id_post_input" class="form-label">Enter User ID</label>
+        <input type="number" class="form-control" id="id_post_input" name="userId">
+        <label for="post_title" class="form-label">Enter Post Title</label>
+        <textarea name="title" id="post_title" class="form-control"></textarea>
+        <label for="post_body" class="form-label">Enter Post Body</label>
+        <textarea name="body" id="post_body" class="form-control"></textarea>
+        <br>
+        <button type="submit" class="btn btn-success">Send Post</button>
+    </form>
+    <form action="#" class="card hidden" id="form_get_posts">
+        <h3 class="card-header">Get user's posts</h3>
+        <label for="id_posts_input" class="form-label">Enter User ID</label>
+        <input type="number" class="form-control" id="id_posts_input" name="id">
+        <br>
+        <button type="submit" class="btn btn-success">Get Posts</button>
+    </form>
+    <div class="card" id="list">
+
+    </div>
+</div>
+
+<script src="./dto/User.js"></script>
+<script src="./dto/Users.js"></script>
+<script src="./services/Controller.js"></script>
+<script src="./services/Toolbox.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

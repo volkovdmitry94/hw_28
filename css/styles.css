@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    background-color: #badbcc;
+}
+.nav li label{
+    cursor: pointer;
+}
+.card{
+    width: 50%;
+    margin: 10px 0 10px 0;
+}
+
+form{
+    background-color: #badbcc;
+    padding: 0 0 20px 0;
+}
+
+.form-control, .form-label, .btn-success{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hidden{
+    display: none;
+}
+
+.active{
+    font-weight: bold;
+}
